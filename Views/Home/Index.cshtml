@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CFS Web Service</h1>
+    <p class="lead">CFS Logger Service is a Web Service that stores your information about your wellbeing. Log on via this web site 
+             to view your details and use the iOS app to record your daily activities and physical and emotional state</p>
+    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+Date: @DateTime.Now
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Login to CFS Service to view your details. You can use the app to enter record your details and maintain a log of activities
+        </p>
+        @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>*@
+    </div>
+    <div class="col-md-4">
+        <h2><a>@Html.ActionLink("Check your progress", "Index", "Chart/Index")</a></h2>
+        <p>Check your monthly progress by viewving you progress chart</p>       
+        <img src="@Url.Action("DrawChart")" alt="Drawing chart with HTML Helper" />
+        @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>*@
+    </div>
+    <div class="col-md-4">
+        <h2>More details</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>*@
+    </div>
+  
+</div>
